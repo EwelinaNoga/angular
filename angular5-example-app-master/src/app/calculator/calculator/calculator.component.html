@@ -1,0 +1,53 @@
+<div class="contein">
+    <div class="calculator">
+        <form class="calc">
+            <table>
+                <p class="calc-display">
+                    <input type="text" name="output" id="res" value="{{output}}" class="calc-display-input" disabled>
+                </p>
+                <p class="operators">
+                    <button type="button" class="calc-button calc-button-gren calc-button-big"
+                            (click)="setOperation('/')">
+                        /
+                    </button>
+                    <button type="button" class="calc-button calc-button-gren calc-button-big"
+                            (click)="setOperation('*')">
+                        *
+                    </button>
+                    <button type="button" class="calc-button calc-button-gren calc-button-big"
+                            (click)="setOperation('+')">
+                        +
+                    </button>
+                    <button type="button" class="calc-button calc-button-gren calc-button-big"
+                            (click)="setOperation('-')">
+                        -
+                    </button>
+                </p>
+                <p class="calc-row">
+                    <button type="button" class="calc-button" (click)="setNumber('0')">0</button>
+                    <button type="button" class="calc-button" (click)="setNumber('1')">1</button>
+                    <button type="button" class="calc-button" (click)="setNumber('2')">2</button>
+                    <button type="button" class="calc-button" (click)="setNumber('3')">3</button>
+                </p>
+                <p class="calc-row">
+                    <button type="button" class="calc-button" (click)="setNumber('4')">4</button>
+                    <button type="button" class="calc-button" (click)="setNumber('5')">5</button>
+                    <button type="button" class="calc-button" (click)="setNumber('6')">6</button>
+                    <button type="button" class="calc-button" (click)="clean()">c</button>
+                </p>
+                <p class="calc-row">
+                    <button type="button" class="calc-button" (click)="setNumber('7')">7</button>
+                    <button type="button" class="calc-button" (click)="setNumber('8')">8</button>
+                    <button type="button" class="calc-button" (click)="setNumber('9')">9</button>
+                    <button type="button" class="calc-button" (click)="setNumber('.')">.</button>
+                </p>
+                <p class="calc-row">
+                    <button type="button" class="calc-button calc-button-yellow calc-button-big"
+                            (click)="count()">
+                        =
+                    </button>
+                </p>
+            </table>
+        </form>
+    </div>
+</div>

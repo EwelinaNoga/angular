@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+footer, header, menu, nav, section {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
